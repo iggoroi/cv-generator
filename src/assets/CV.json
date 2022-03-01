@@ -1,0 +1,43 @@
+{
+  "Information": {
+    "Name": "Luca",
+    "Surname": "Picone",
+    "Cellphone": "3663597812",
+    "Email": "l.picone1@itmalafarina.edu.it",
+    "Birthdate": "2005-05-07",
+    "Birth_place": "Soverato",
+    "Residence": "Soverato"
+  },
+
+  "Experiences" : {
+    "Start_date": "2021-06-10",
+    "End_date": "20021-09-10",
+    "Name": "Cashier",
+    "Agency": "LucioInformatica",
+    "Address": "Via Picone 00"
+  },
+
+  "Formation" : {
+    "School/University": "ITT Malafarina",
+    "Start_date": "2016-09-14",
+    "End_date": "2022-06-09",
+    "Address": "Trento Triestre Sreet"
+  },
+
+  "License" : {
+    "Name": "Diploma",
+    "Number": null
+  },
+
+  "Competences": {
+    "Name": "Maths",
+    "Power": "10/5"
+  },
+
+  "Projects": {
+    "Name" : "Erasmus+",
+    "Agency": "Betstars",
+    "Start date": "2022-03-01",
+    "End date": "2022-03-29"
+  }
+}
