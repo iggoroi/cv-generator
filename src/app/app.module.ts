@@ -1,17 +1,41 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavigatorComponent } from './components/navigator/navigator.component';
+import { Routes, RouterModule } from '@angular/router';
+import { InformationComponent } from './pages/information/information.component';
+import { FormationComponent } from './pages/formation/formation.component';
+import { LicenseComponent } from './pages/license/license.component';
+import { CompetitionComponent } from './pages/competition/competition.component';
+import { ProjectComponent } from './pages/project/project.component';
+import { ExperienceComponent } from "./pages/experience/experience.component";
+
+const routes: Routes = [
+  { path:'information', component:InformationComponent},
+  { path:'experience', component:ExperienceComponent},
+  { path:'formation', component:FormationComponent},
+  { path:'license', component:LicenseComponent},
+  { path:'competition', component:CompetitionComponent},
+  { path:'project', component:ProjectComponent}
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavigatorComponent,
+    InformationComponent,
+    FormationComponent,
+    LicenseComponent,
+    CompetitionComponent,
+    ProjectComponent
   ],
   imports: [
+    RouterModule.forRoot(routes),
     BrowserModule,
     AppRoutingModule
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
