@@ -10,6 +10,7 @@ import { LicenseComponent } from './pages/license/license.component';
 import { CompetitionComponent } from './pages/competition/competition.component';
 import { ProjectComponent } from './pages/project/project.component';
 import { ExperienceComponent } from "./pages/experience/experience.component";
+import {HttpClientModule} from "@angular/common/http";
 
 const routes: Routes = [
   { path:'information', component:InformationComponent},
@@ -33,7 +34,8 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes),
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   exports: [RouterModule],
   providers: [],
