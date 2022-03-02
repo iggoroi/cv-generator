@@ -18,7 +18,7 @@
   },
 
   "Formation" : {
-    "School/University": "ITT Malafarina",
+    "School-University": "ITT Malafarina",
     "Start_date": "2016-09-14",
     "End_date": "2022-06-09",
     "Address": "Trento Triestre Sreet"
@@ -37,7 +37,7 @@
   "Projects": {
     "Name" : "Erasmus+",
     "Agency": "Betstars",
-    "Start date": "2022-03-01",
-    "End date": "2022-03-29"
+    "Start_date": "2022-03-01",
+    "End_date": "2022-03-29"
   }
 }

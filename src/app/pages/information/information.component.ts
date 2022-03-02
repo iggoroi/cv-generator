@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-information',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./information.component.scss']
 })
 export class InformationComponent implements OnInit {
+  data:any;
 
-  constructor() { }
+  constructor(private http:HttpClient) {
+
+  }
 
   ngOnInit(): void {
+    this.http.get("assets/CV.json").subscribe(data=>{
+      debugger;
+    })
   }
 
 }
