@@ -12,6 +12,7 @@ interface MenuItem {
   styleUrls: ['./navigator.component.scss']
 })
 export class NavigatorComponent {
+  collapse = true;
   items:Array<MenuItem>=[];
   constructor() {
     this.items=[
