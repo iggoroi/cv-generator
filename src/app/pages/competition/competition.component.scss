@@ -1,16 +1,37 @@
+#picone{
+  margin: 10px 20px 10px 0;
+}
+
 .bordino{
   padding: 4px;
   margin: 0 0;
   border: 2px solid darkslategray;
 }
 
-#picone{
-  margin: 10px 20px 10px 20px;
+.attaccato{
+  padding: 0;
 }
 
 .sfondo{
   background-color: dimgray;
 }
-.margine{
-  margin: 15px 0px;
+
+.posizione{
+  position: relative;
+  top: 150px;
 }
+
+.margine{
+   margin: 20px 20px 0px 20px;
+}
+.margineFoto{
+  margin: 0px 20px 0px 20px;
+}
+.immagine{
+  height: 270px;
+  width: 270px;
+}
+.magineColonna{
+  margin: 200px 0px 0px -900px;
+}
+

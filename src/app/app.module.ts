@@ -11,6 +11,7 @@ import { CompetitionComponent } from './pages/competition/competition.component'
 import { ProjectComponent } from './pages/project/project.component';
 import { ExperienceComponent } from "./pages/experience/experience.component";
 import {HttpClientModule} from "@angular/common/http";
+import { MenuComponent } from './pages/menu/menu.component';
 
 const routes: Routes = [
   { path:'information', component:InformationComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path:'formation', component:FormationComponent},
   { path:'license', component:LicenseComponent},
   { path:'competition', component:CompetitionComponent},
-  { path:'project', component:ProjectComponent}
+  { path:'project', component:ProjectComponent},
+  { path:'menu', component:MenuComponent}
 ];
 
 @NgModule({
@@ -30,7 +32,8 @@ const routes: Routes = [
     LicenseComponent,
     CompetitionComponent,
     ProjectComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    MenuComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

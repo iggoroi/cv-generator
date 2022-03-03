@@ -16,6 +16,10 @@ export class NavigatorComponent {
   constructor() {
     this.items=[
       {
+        url:"/menu",
+        label:"Menu"
+      },
+      {
         url:"/information",
         label:"Information"
       },
@@ -36,8 +40,8 @@ export class NavigatorComponent {
         label:"Competition"
       },
       {
-        url:"/project",
-        label:"Project"
+        url: "/project",
+        label: "Project"
       }
     ]
   }
