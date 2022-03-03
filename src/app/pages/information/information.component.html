@@ -1,1 +1,18 @@
-<p>information works!</p>
+<div class="row">
+  <img src="https://www.hoganlovells.com/-/media/hogan-lovells/global/people/p/picone_luca_l18530.jpg" class="col-sm-4">
+  <div class="text-center" class="col-sm">
+    <h3>Information</h3>
+    <div class="row sfondo text-white" id="picone">
+      <div class="col attaccato">
+        <p *ngFor="let dati of entries" class="bordino">
+          {{dati.key}}
+        </p>
+      </div>
+      <div class="col-10 attaccato">
+        <p *ngFor="let dati of entries" class="bordino">
+          {{dati.val}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

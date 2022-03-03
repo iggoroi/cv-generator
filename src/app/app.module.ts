@@ -29,7 +29,8 @@ const routes: Routes = [
     FormationComponent,
     LicenseComponent,
     CompetitionComponent,
-    ProjectComponent
+    ProjectComponent,
+    ExperienceComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

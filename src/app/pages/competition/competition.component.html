@@ -1,1 +1,16 @@
-<p>competition works!</p>
+<div id="picone">
+  <div class="row sfondo">
+    <p *ngFor="let dati of entries" class="col-sm bordino text-white">
+      {{dati.key}}
+    </p>
+  </div>
+  <div class="row sfondo">
+    <p *ngFor="let dati of entries" class="col-sm bordino text-white">
+      {{dati.val}}
+    </p>
+  </div>
+  <div class="row margine">
+    <h5>Report</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate? Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione repudiandae sunt vel?</p>
+  </div>
+</div>
