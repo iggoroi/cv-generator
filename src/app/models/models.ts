@@ -5,8 +5,7 @@ export interface Information {
   email: string;
   birthdate: Date;
   birthPlace: string;
-  residence: string
-
+  residence: string;
 }
 
 export interface Experience {
@@ -14,30 +13,30 @@ export interface Experience {
   endDate: Date;
   name: string;
   agency: string;
-  address: string
+  address: string;
 }
 
 export interface Formation {
   school: string;
   startDate: Date;
   endDate: Date;
-  address: string
+  address: string;
 }
 
 export interface License {
   name: string;
-  number: number
+  number: number;
 }
 
 export interface Competence {
   name: string;
-  power: 1 | 2 | 3 | 4 | 5
+  power: 1 | 2 | 3 | 4 | 5;
 }
 
 export interface Project {
   name: string;
   startDate: Date;
   endDate: Date;
-  agency: string
+  agency: string;
 }
 
