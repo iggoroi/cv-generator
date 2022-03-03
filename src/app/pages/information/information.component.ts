@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {Information} from "../../models/models";
+import {KeyValue} from "@angular/common";
 
 @Component({
   selector: 'app-information',
@@ -7,16 +9,16 @@ import {HttpClient} from "@angular/common/http";
   styleUrls: ['./information.component.scss']
 })
 export class InformationComponent implements OnInit {
-  data:any;
-
-  constructor(private http:HttpClient) {
-
-  }
+  data:Information;
+  entries:Array<{key:string,val:any}>=[];
+  constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get("assets/CV.json").subscribe(data=>{
-      debugger;
+    this.http.get<any>("assets/CV.json").subscribe(data=>{
+      this.data=data.information;
+      Object.entries(this.data).forEach(([key,val])=>{
+        this.entries.push({key,val})
+      })
     })
   }
-
 }
