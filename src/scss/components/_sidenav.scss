@@ -1,14 +1,24 @@
-// 
+//
 // Sidenav
-// 
+//
+// Pre-state grayscale colors used in other variables
 
+$gray-800: #343a40;
+
+// Override Bootstrap color system
+
+$orange: #bd5d38;
+
+// Override Bootstrap default state colors
+
+$primary: $orange;
 #sideNav {
     padding-left: 1rem;
     padding-right: 1rem;
 
     .navbar-nav .nav-item .nav-link {
         font-weight: 800;
-        letter-spacing: 0.05rem;
+        letter-spacing: 0.06rem;
         text-transform: uppercase;
     }
 
@@ -18,6 +28,7 @@
         }
     }
 }
+
 
 @include media-breakpoint-up(lg) {
     #sideNav {
