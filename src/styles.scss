@@ -1,5 +1,9 @@
+@import "~bootstrap/scss/bootstrap";
+@import "scss/variables/colors";
+@import "scss/variables/typography";
+@import "scss/variables/spacing";
 
+@import "scss/components/icons";
+@import "scss/components/sidenav";
 
-body {
-  background-color: darkgray;
-}
+@import "scss/global";
