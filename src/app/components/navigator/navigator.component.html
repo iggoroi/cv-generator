@@ -5,8 +5,10 @@
       <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://www.hoganlovells.com/-/media/hogan-lovells/global/people/p/picone_luca_l18530.jpg" alt="...">
     </span>
   </a>
-  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-bs-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
-  <div class="collapse navbar-collapse " id="navbarResponsive" style="">
+  <button class="navbar-toggler" type="button" (click)="collapse=!collapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse" id="navbarResponsive" [class.collapse]="collapse">
     <ul class="navbar-nav">
       <li *ngFor="let item of items" class="nav-item">
         <a  class="nav-link" routerLink="{{item.url}}" routerLinkActive="active">
