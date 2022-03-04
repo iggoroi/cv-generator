@@ -5,9 +5,9 @@ import { AppComponent } from './app.component';
 import { NavigatorComponent } from './components/navigator/navigator.component';
 import { Routes, RouterModule } from '@angular/router';
 import { InformationComponent } from './pages/information/information.component';
-import { FormationComponent } from './pages/formation/formation.component';
+import { EducationComponent } from './pages/education/education.component';
 import { LicenseComponent } from './pages/license/license.component';
-import { CompetitionComponent } from './pages/competition/competition.component';
+import { SkillComponent } from './pages/skill/skill.component';
 import { ProjectComponent } from './pages/project/project.component';
 import { ExperienceComponent } from "./pages/experience/experience.component";
 import {HttpClientModule} from "@angular/common/http";
@@ -16,9 +16,9 @@ import { MenuComponent } from './pages/menu/menu.component';
 const routes: Routes = [
   { path:'information', component:InformationComponent},
   { path:'experience', component:ExperienceComponent},
-  { path:'formation', component:FormationComponent},
+  { path:'education', component:EducationComponent},
   { path:'license', component:LicenseComponent},
-  { path:'competition', component:CompetitionComponent},
+  { path:'skill', component:SkillComponent},
   { path:'project', component:ProjectComponent},
   { path:'menu', component:MenuComponent}
 ];
@@ -28,9 +28,9 @@ const routes: Routes = [
     AppComponent,
     NavigatorComponent,
     InformationComponent,
-    FormationComponent,
+    EducationComponent,
     LicenseComponent,
-    CompetitionComponent,
+    SkillComponent,
     ProjectComponent,
     ExperienceComponent,
     MenuComponent

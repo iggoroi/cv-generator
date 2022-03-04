@@ -8,36 +8,56 @@
     "birthPlace": "Soverato",
     "residence": "Soverato"
   },
-
-  "experiences" : {
-    "startDate": "2021-06-10",
-    "endDate": "20021-09-10",
-    "name": "Cashier",
-    "agency": "LucioInformatica",
-    "address": "Via Picone 00"
-  },
-
-  "formation" : {
+  "experiences": [
+    {
+      "startDate": "2021-06-10",
+      "endDate": "20021-09-10",
+      "name": "Cashier",
+      "agency": "LucioInformatica",
+      "address": "Via Picone 00"
+    },
+    {
+      "startDate": "2005-05-07",
+      "name": "Cretino",
+      "agency": "Vita",
+      "address": "Mondo"
+    }
+  ],
+  "education": {
     "school": "ITT Malafarina",
     "startDate": "2016-09-14",
     "endDate": "2022-06-09",
     "address": "Trento Triestre Sreet"
   },
-
-  "license" : {
+  "license": {
     "name": "Diploma",
     "number": null
   },
-
-  "competences": {
-    "name": "Maths",
-    "power": "10/5"
-  },
-
-  "projects": {
-    "name" : "Erasmus+",
-    "agency": "Betstars",
-    "startDate": "2022-03-01",
-    "endDate": "2022-03-29"
-  }
+  "skills": [
+    {
+      "name": "Maths",
+      "power": 5
+    },
+    {
+      "name": "Maltese",
+      "power": 2
+    },
+    {
+      "name": "LOL",
+      "power": 4
+    }
+  ],
+  "projects": [
+    {
+      "name": "Erasmus+",
+      "agency": "Betstars",
+      "startDate": "2022-03-01",
+      "endDate": "2022-03-29"
+    },
+    {
+      "name": "Fare schifo",
+      "agency": "Dio srl",
+      "startDate": "2005-05-07"
+    }
+  ]
 }

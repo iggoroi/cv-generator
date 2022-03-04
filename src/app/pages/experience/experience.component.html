@@ -1,24 +1,42 @@
 <div class="row">
-  <div class="row"> <p></p></div>
+  <div class="row"><p></p></div>
   <header class="text-center">
     <h3>Experience</h3>
   </header>
   <hr>
-  <img src="https://www.hoganlovells.com/-/media/hogan-lovells/global/people/p/picone_luca_l18530.jpg" class="col-sm-4 rounded-circle posizione immagine">
+  <img src="https://www.hoganlovells.com/-/media/hogan-lovells/global/people/p/picone_luca_l18530.jpg"
+       class="col-sm-4 rounded-circle posizione immagine">
   <div class="col-sm margineTable">
-  <div class="row sfondo">
-    <p *ngFor="let dati of entries" class="col-sm bordino text-white">
-      {{dati.key}}
-    </p>
-  </div>
-  <div class="row sfondo">
-    <p *ngFor="let dati of entries" class="col-sm bordino text-white">
-      {{dati.val}}
-    </p>
-  </div>
-  <div class="row margine">
-    <h5>Report</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate? Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione repudiandae sunt vel?</p>
-  </div>
+    <div class="row sfondo">
+      <p *ngFor="let dati of entries" class="col-sm bordino text-white">
+        {{dati.val.name}}
+      </p>
+    </div>
+    <div class="row sfondo">
+      <p *ngFor="let dati of entries" class="col-sm bordino text-white">
+      {{dati.val.agency}}
+      </p>
+    </div>
+    <div class="row sfondo">
+      <p *ngFor="let dati of entries" class="col-sm bordino text-white">
+        {{dati.val.address}}
+      </p>
+    </div>
+    <div class="row sfondo">
+      <p *ngFor="let dati of entries" class="col-sm bordino text-white">
+        {{dati.val.startDate}}
+      </p>
+    </div>
+    <div class="row sfondo">
+      <p *ngFor="let dati of entries" class="col-sm bordino text-white">
+        {{dati.val.endDate}}
+      </p>
+    </div>
+    <div class="row margine">
+      <h5>Report</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate?
+        Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione
+        repudiandae sunt vel?</p>
+    </div>
   </div>
 </div>
