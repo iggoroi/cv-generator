@@ -1,22 +1,16 @@
-<div class="row margine">
-  <div class="row"> <p></p></div>
+<div class="row" style="margin: 10px 0 0 0">
   <header class="text-center">
     <h3>Information</h3>
   </header>
   <hr>
-  <img src="https://www.hoganlovells.com/-/media/hogan-lovells/global/people/p/picone_luca_l18530.jpg" class="col-sm-4 rounded-circle posizione immagine">
-  <div class="text-center" class="col-sm margineTable">
-    <div class="row sfondo text-white margine">
-      <div class="col attaccato">
-        <p *ngFor="let dati of entries" class="bordino">
-          {{dati.key}}
-        </p>
-      </div>
-      <div class="col-10 attaccato">
-        <p *ngFor="let dati of entries" class="bordino">
-          {{dati.val}}
-        </p>
-      </div>
-    </div>
-  </div>
+  <table class="table table-striped align-items-center justify-content-center d-flex min-vh-100">
+    <thead>
+    </thead>
+    <tbody>
+    <tr *ngFor="let dati of entries">
+      <th>{{ dati.key }}</th>
+      <td>{{dati.val}}</td>
+    </tr>
+    </tbody>
+  </table>
 </div>
