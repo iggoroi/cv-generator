@@ -1,20 +1,32 @@
-  <div class="row" style="margin: 10px 0 0 0">
-    <header class="text-center">
-      <h3>Project</h3>
-    </header>
-    <hr>
-    <table class="table table-striped align-items-center justify-content-center d-flex min-vh-100">
-      <thead>
-      </thead>
-      <tbody>
-      <tr *ngFor="let dati of entries">
-        <th>{{ dati.key }}</th>
-        <td>{{dati.val}}</td>
-      </tr>
-      </tbody>
-    </table>
-      <div class="row margine">
-        <h5>Report</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate? Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione repudiandae sunt vel?</p>
-      </div>
+<header class="text-center" style="padding: 1rem 0 0 0">
+  <h3>Projects</h3>
+</header>
+<hr>
+<div class="align-items-center justify-content-center d-flex flex-column" style="padding: 0 200px; margin: 200px 0">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Project name</th>
+      <th scope="col">Hosting agency</th>
+      <th scope="col">Start date</th>
+      <th scope="col">End date</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let dati of entries">
+      <th scope="row">{{dati.key + 1}}</th>
+      <th>{{ dati.val.name}}</th>
+      <td>{{ dati.val.agency }}</td>
+      <td>{{ dati.val.startDate }}</td>
+      <td>{{ dati.val.endDate }}</td>
+    </tr>
+    </tbody>
+  </table>
+  <div style="margin: auto">
+    <h5>Report</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate?
+      Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione
+      repudiandae sunt vel?</p>
+  </div>
 </div>

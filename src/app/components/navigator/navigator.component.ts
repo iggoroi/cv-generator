@@ -29,16 +29,16 @@ export class NavigatorComponent {
         label:"Experience"
       },
       {
-        url:"/formation",
-        label:"Formation"
+        url:"/education",
+        label:"Education"
       },
       {
         url:"/license",
         label:"License"
       },
       {
-        url:"/competition",
-        label:"Competition"
+        url:"/skill",
+        label:"Skill"
       },
       {
         url: "/project",

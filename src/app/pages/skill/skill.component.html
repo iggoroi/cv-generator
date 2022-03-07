@@ -1,28 +1,22 @@
 <header class="text-center" style="padding: 1rem 0 0 0">
-  <h3>Experiences</h3>
+  <h3>Skills</h3>
 </header>
 <hr>
 <div class="align-items-center justify-content-center d-flex flex-column" style="padding: 0 200px; margin: 200px 0">
-  <div style="width: 100%">
+  <div style="width: 50%">
     <table class="table table-striped">
       <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Start date</th>
-        <th scope="col">End date</th>
-        <th scope="col">Name</th>
-        <th scope="col">Agency</th>
-        <th scope="col">Address</th>
+        <th scope="col">Skill</th>
+        <th scope="col">Level</th>
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let dati of entries;">
+      <tr *ngFor="let dati of entries">
         <th scope="row">{{dati.key + 1}}</th>
-        <td>{{ dati.val.startDate }}</td>
-        <td>{{ dati.val.endDate }}</td>
-        <td>{{ dati.val.name }}</td>
-        <td>{{ dati.val.agency }}</td>
-        <td>{{ dati.val.address }}</td>
+        <th>{{ dati.val.name}}</th>
+        <td>{{ dati.val.power }}</td>
       </tr>
       </tbody>
     </table>
