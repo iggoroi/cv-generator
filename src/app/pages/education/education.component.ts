@@ -9,7 +9,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class EducationComponent implements OnInit {
   data:Education;
-  entries:Array<{key:string,val:any}>=[];
+  entries:Array<{key:string,val:any}> = [];
   constructor(private http:HttpClient) { }
 
   ngOnInit(): void {

@@ -1,31 +1,30 @@
-<div class="row ">
-  <div class="row">
-    <div class="row"><p></p></div>
-    <header class="text-center">
-      <h3>Skills</h3>
-    </header>
-    <hr>
-    <div class="col-sm">
-      <img src="https://www.hoganlovells.com/-/media/hogan-lovells/global/people/p/picone_luca_l18530.jpg"
-           class="rounded-circle posizione immagine margineFoto">
-    </div>
-    <div class="col-sm magineColonna">
-      <div class="row sfondo">
-        <p *ngFor="let dati of entries" class="col-sm bordino text-white">
-        {{dati.val.name}}
-        </p>
-      </div>
-      <div class="row sfondo">
-        <p *ngFor="let dati of entries" class="col-sm bordino text-white">
-          {{dati.val.power}}
-        </p>
-      </div>
-      <div class="row margine">
-        <h5>Report</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate?
-          Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione
-          repudiandae sunt vel?</p>
-      </div>
-    </div>
+<header class="text-center" style="padding: 1rem 0 0 0">
+  <h3>Skills</h3>
+</header>
+<hr>
+<div class="align-items-center justify-content-center d-flex flex-column">
+  <div style="width: 50%">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Skill</th>
+        <th scope="col">Level</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let dati of entries">
+        <th scope="row">{{ (dati.key | number) }}</th>
+        <th>{{ dati.val.name}}</th>
+        <td>{{ dati.val.power }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="margin: auto">
+    <h5>Report</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate?
+      Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione
+      repudiandae sunt vel?</p>
   </div>
 </div>

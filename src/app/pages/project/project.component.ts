@@ -20,6 +20,7 @@ export class ProjectComponent implements OnInit {
         this.entries.push({key,val})
       })
     })
+
   }
 
 }
