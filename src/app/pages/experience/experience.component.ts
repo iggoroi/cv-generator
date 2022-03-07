@@ -9,7 +9,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class ExperienceComponent implements OnInit {
   data:Experience;
-  entries:Array<{key:string,val:any}>=[];
+  entries:Array<{key:string,val:Experience}>=[];
   constructor(private http:HttpClient) { }
 
   ngOnInit(): void {

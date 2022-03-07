@@ -1,22 +1,20 @@
-<div class="row" style="margin: 10px 0 0 0">
+<div class="row">
   <header class="text-center">
-    <h3>Experience</h3>
+    <h3>Experiences</h3>
   </header>
   <hr>
-  <div class=" align-items-center justify-content-center d-flex min-vh-100">
-  <table class="table table-striped" style="width: 75%">
-    <thead>
-    </thead>
-    <tbody>
-    <tr *ngFor="let dati of entries">
-      <th>{{ dati.key }}</th>
-      <td>{{dati.val}}</td>
-    </tr>
-    </tbody>
-  </table>
-  </div>
-  <div class="row margine text-black">
-    <h5>Report</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate? Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione repudiandae sunt vel?</p>
+  <div class="align-items-center justify-content-center d-flex min-vh-100" style="padding: 0 200px">
+    <table class="table table-striped">
+      <tbody>
+      <tr *ngFor="let dati of entries">
+        <th>{{ dati.key }}</th>
+        <td>{{ dati.val }}</td>
+      </tr>
+      </tbody>
+    </table>
+    <h5>Placeholder</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate?
+      Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione
+      repudiandae sunt vel?</p>
   </div>
 </div>

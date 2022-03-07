@@ -1,0 +1,30 @@
+<header class="text-center" style="padding: 1rem 0 0 0">
+  <h3>Skills</h3>
+</header>
+<hr>
+<div class="align-items-center justify-content-center d-flex flex-column">
+  <div style="width: 50%">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Skill</th>
+        <th scope="col">Level</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let dati of entries">
+        <th scope="row">{{ (dati.key | number) }}</th>
+        <th>{{ dati.val.name}}</th>
+        <td>{{ dati.val.power }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="margin: auto">
+    <h5>Report</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate?
+      Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione
+      repudiandae sunt vel?</p>
+  </div>
+</div>
