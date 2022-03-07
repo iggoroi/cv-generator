@@ -5,7 +5,7 @@ import {HttpClient} from "@angular/common/http";
 @Component({
   selector: 'app-competition',
   templateUrl: './competition.component.html',
-  styleUrls: ['./competition.component.scss']
+  styleUrls: ['./competition.component.scss'],
 })
 export class CompetitionComponent implements OnInit {
   data:Competence;
@@ -20,5 +20,4 @@ export class CompetitionComponent implements OnInit {
       })
     })
   }
-
 }
