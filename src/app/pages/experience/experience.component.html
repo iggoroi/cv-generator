@@ -1,18 +1,34 @@
-<div class="row">
-  <header class="text-center">
-    <h3>Experiences</h3>
-  </header>
-  <hr>
-  <div class="align-items-center justify-content-center d-flex min-vh-100" style="padding: 0 200px">
+<header class="text-center" style="padding: 1rem 0 0 0">
+  <h3>Experiences</h3>
+</header>
+<hr>
+<div class="align-items-center justify-content-center d-flex flex-column" style="padding: 0 200px; margin: 200px 0">
+  <div style="width: 100%">
     <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Start date</th>
+        <th scope="col">End date</th>
+        <th scope="col">Name</th>
+        <th scope="col">Agency</th>
+        <th scope="col">Address</th>
+      </tr>
+      </thead>
       <tbody>
-      <tr *ngFor="let dati of entries">
-        <th>{{ dati.key }}</th>
-        <td>{{ dati.val }}</td>
+      <tr *ngFor="let dati of entries;">
+        <th scope="row">{{dati.key + 1}}</th>
+        <td>{{ dati.val.startDate }}</td>
+        <td>{{ dati.val.endDate }}</td>
+        <td>{{ dati.val.name }}</td>
+        <td>{{ dati.val.agency }}</td>
+        <td>{{ dati.val.address }}</td>
       </tr>
       </tbody>
     </table>
-    <h5>Placeholder</h5>
+  </div>
+  <div>
+    <h5>Report</h5>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate?
       Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione
       repudiandae sunt vel?</p>

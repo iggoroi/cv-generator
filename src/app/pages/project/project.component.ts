@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Information, Project} from "../../models/models";
 import {HttpClient} from "@angular/common/http";
+import {CurriculumService} from "../../services/curriculum.service";
 
 @Component({
   selector: 'app-project',
@@ -9,15 +10,15 @@ import {HttpClient} from "@angular/common/http";
 })
 export class ProjectComponent implements OnInit {
   data:Project;
-  entries:Array<{key:string,val:any}>=[];
+  entries:Array<{key:number,val:any}>=[];
 
-  constructor(private http:HttpClient) { }
+  constructor(private cvservice:CurriculumService) { }
 
   ngOnInit(): void {
-    this.http.get<any>("assets/CV.json").subscribe(data=>{
-      this.data=data.projects;
+    this.cvservice.getProjects().subscribe(data=>{
+      this.data=data;
       Object.entries(this.data).forEach(([key,val])=>{
-        this.entries.push({key,val})
+        this.entries.push({key: parseInt(key),val})
       })
     })
 

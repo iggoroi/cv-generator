@@ -2,7 +2,7 @@
   <h3>Projects</h3>
 </header>
 <hr>
-<div class="align-items-center justify-content-center d-flex" style="padding: 0 200px; margin: 200px 0">
+<div class="align-items-center justify-content-center d-flex flex-column" style="padding: 0 200px; margin: 200px 0">
   <table class="table table-striped">
     <thead>
     <tr>
@@ -15,7 +15,7 @@
     </thead>
     <tbody>
     <tr *ngFor="let dati of entries">
-      <th scope="row">{{ (dati.key | number) }}</th>
+      <th scope="row">{{dati.key + 1}}</th>
       <th>{{ dati.val.name}}</th>
       <td>{{ dati.val.agency }}</td>
       <td>{{ dati.val.startDate }}</td>
@@ -23,7 +23,7 @@
     </tr>
     </tbody>
   </table>
-  <div class="row" style="margin: auto">
+  <div style="margin: auto">
     <h5>Report</h5>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate?
       Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione

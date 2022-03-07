@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Skills} from "../../models/models";
 import {HttpClient} from "@angular/common/http";
+import {CurriculumService} from "../../services/curriculum.service";
 
 @Component({
   selector: 'app-skill',
@@ -11,15 +12,15 @@ import {HttpClient} from "@angular/common/http";
 export class SkillComponent implements OnInit {
 
   data:Skills;
-  entries:Array<{key:string,val:Skills}> = [];
+  entries:Array<{key:number,val:Skills}> = [];
 
-  constructor(private http:HttpClient) { }
+  constructor(private cvservice:CurriculumService) { }
 
   ngOnInit(): void {
-    this.http.get<any>("assets/CV.json").subscribe(data=>{
-      this.data=data.skills;
-      Object.entries(this.data).forEach(([key, val])=>{
-        this.entries.push({key, val})
+    this.cvservice.getSkills().subscribe(data=>{
+      this.data=data;
+      Object.entries(this.data).forEach(([key,val])=>{
+        this.entries.push({key: parseInt(key),val})
       })
     })
 

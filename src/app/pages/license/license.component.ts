@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Information, License} from "../../models/models";
 import {HttpClient} from "@angular/common/http";
+import {CurriculumService} from "../../services/curriculum.service";
 
 @Component({
   selector: 'app-license',
@@ -10,15 +11,17 @@ import {HttpClient} from "@angular/common/http";
 export class LicenseComponent implements OnInit {
   data:License;
   entries:Array<{key:string,val:any}>=[];
-  constructor(private http:HttpClient) { }
+
+  constructor(private cvservice:CurriculumService) { }
 
   ngOnInit(): void {
-    this.http.get<any>("assets/CV.json").subscribe(data=>{
-      this.data=data.license;
+    this.cvservice.getLicense().subscribe(data=>{
+      this.data=data;
       Object.entries(this.data).forEach(([key,val])=>{
         this.entries.push({key,val})
       })
     })
+
   }
 
 }
