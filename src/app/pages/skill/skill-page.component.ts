@@ -5,11 +5,11 @@ import {CurriculumService} from "../../services/curriculum.service";
 
 @Component({
   selector: 'app-skill',
-  templateUrl: './skill.component.html',
-  styleUrls: ['./skill.component.scss']
+  templateUrl: './skill-page.component.html',
+  styleUrls: ['./skill-page.component.scss']
 })
 
-export class SkillComponent implements OnInit {
+export class SkillPage implements OnInit {
 
   data:Skills;
   entries:Array<{key:number,val:Skills}> = [];
@@ -24,6 +24,10 @@ export class SkillComponent implements OnInit {
       })
     })
 
+  }
+
+  trigger(event:any){
+    alert(event);
   }
 
 }

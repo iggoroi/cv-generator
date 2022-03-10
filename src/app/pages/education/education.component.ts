@@ -11,8 +11,7 @@ import {CurriculumService} from "../../services/curriculum.service";
 export class EducationComponent implements OnInit {
   data:Education;
   entries:Array<{key:string,val:any}> = [];
-  constructor(private cvservice:CurriculumService) { }
-
+  constructor(private cvservice:CurriculumService) {}
   ngOnInit(): void {
     this.cvservice.getEducation().subscribe(data=>{
       this.data=data;
