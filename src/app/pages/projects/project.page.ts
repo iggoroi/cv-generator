@@ -4,18 +4,18 @@ import {HttpClient} from "@angular/common/http";
 import {CurriculumService} from "../../services/curriculum.service";
 
 @Component({
-  selector: 'app-project',
-  templateUrl: './project.component.html',
-  styleUrls: ['./project.component.scss']
+  selector: 'app-projects',
+  templateUrl: './project.page.html',
+  styleUrls: ['./project.page.scss']
 })
-export class ProjectComponent implements OnInit {
+export class ProjectPage implements OnInit {
   data:Project;
   entries:Array<{key:number,val:any}>=[];
 
   constructor(private cvservice:CurriculumService) { }
 
   ngOnInit(): void {
-    this.cvservice.getProjects().subscribe(data=>{
+    this.cvservice.getSection('projects').subscribe(data=>{
       this.data=data;
       Object.entries(this.data).forEach(([key,val])=>{
         this.entries.push({key: parseInt(key),val})
