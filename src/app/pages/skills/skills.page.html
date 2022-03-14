@@ -13,10 +13,12 @@
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let dati of entries">
-        <th scope="row">{{dati.key + 1}}</th>
-        <th>{{ dati.val.name}}</th>
-        <td>{{ dati.val.power }}</td>
+      <tr *ngFor="let dati of entries; let i= index">
+        <th scope="row">{{i +1 }}</th>
+        <td>{{ dati.val.name}}</td>
+        <td>
+          <progress max="5" value="{{dati.val.power}}"></progress>
+        </td>
       </tr>
       </tbody>
     </table>
@@ -28,3 +30,4 @@
       repudiandae sunt vel?</p>
   </div>
 </div>
+
