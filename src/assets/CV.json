@@ -29,10 +29,12 @@
     "endDate": "2022-06-09",
     "address": "Trento Triestre Sreet"
   },
-  "license": {
-    "name": "Diploma",
-    "number": null
-  },
+  "license": [
+    {
+      "name": "Diploma",
+      "vote": 80
+    }
+  ],
   "skills": [
     {
       "name": "Maths",
@@ -58,6 +60,24 @@
       "name": "Fare schifo",
       "agency": "Dio srl",
       "startDate": "2005-05-07"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Italiano",
+      "level": "Madrelingua"
+    },
+    {
+      "language": "Inglese",
+      "level": "C1"
+    },
+    {
+      "language": "Francese",
+      "level": "B1"
+    },
+    {
+      "language": "Arabo",
+      "level": "A2"
     }
   ]
 }

@@ -1,25 +1,26 @@
-<header class="text-center" style="padding: 1rem 0 0 0">
-  <h3>Education</h3>
-</header>
-<hr>
-<div class="align-items-center justify-content-center d-flex flex-column" style="padding: 0 200px; margin: 200px 0">
-  <div style="width: 50%">
-    <table class="table table-striped">
-      <tbody>
-      <tr *ngFor="let dati of entries">
-        <th>{{ dati.key }}</th>
-        <td>{{ dati.val }}</td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
-  <div>
-    <h5>Report</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate?
-      Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione
-      repudiandae sunt vel?</p>
+<div class="row" style="margin: 10px 0 0 0">
+  <header class="text-center">
+    <h3>Education</h3>
+  </header>
+  <hr>
+  <div class="align-items-center justify-content-center d-flex flex-column" style="padding: 0 200px; margin: 200px 0">
+    <div style="width: 50%">
+      <table class="table table-striped table-bordered border-dark">
+        <tbody>
+        <tr *ngFor="let dati of entries">
+          <th>{{ dati.key }}</th>
+          <td>{{ dati.val }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h5>Report</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate?
+        Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione
+        repudiandae sunt vel?</p>
+    </div>
   </div>
 </div>
-
 
 

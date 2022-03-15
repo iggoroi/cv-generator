@@ -13,6 +13,8 @@ import { ExperiencePage } from "./pages/experiences/experience.page";
 import {HttpClientModule} from "@angular/common/http";
 import { MenuComponent } from './pages/menu/menu.page';
 import { SkillComponent } from "./components/skill/skill.component";
+import { RatingComponent } from './components/rating/rating.component';
+import { LanguagesPage } from './pages/languages/languages.page';
 
 const routes: Routes = [
   { path:'informations', component:InformationPage},
@@ -21,7 +23,8 @@ const routes: Routes = [
   { path:'licenses', component:LicensePage},
   { path:'skills', component:SkillsPage},
   { path:'projects', component:ProjectPage},
-  { path:'menu', component:MenuComponent}
+  { path:'menu', component:MenuComponent},
+  { path: 'languages', component:LanguagesPage}
 ];
 
 @NgModule({
@@ -35,7 +38,9 @@ const routes: Routes = [
     SkillComponent,
     ProjectPage,
     ExperiencePage,
-    MenuComponent
+    MenuComponent,
+    RatingComponent,
+    LanguagesPage
   ],
   imports: [
     RouterModule.forRoot(routes),
