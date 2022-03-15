@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {Skills} from "../../models/models";
-import {HttpClient} from "@angular/common/http";
 import {CurriculumService} from "../../services/curriculum.service";
 
 @Component({
@@ -13,6 +12,7 @@ export class SkillsPage implements OnInit {
 
   data:Skills;
   entries:Array<{key:number,val:Skills}> = [];
+
 
   constructor(private cvservice:CurriculumService) { }
 

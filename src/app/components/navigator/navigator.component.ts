@@ -43,6 +43,10 @@ export class NavigatorComponent {
       {
         url: "/projects",
         label: "Projects"
+      },
+      {
+        url: "/languages",
+        label: "Languages"
       }
     ]
   }
