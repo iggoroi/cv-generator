@@ -6,11 +6,18 @@
   <div class=" align-items-center justify-content-center d-flex flex-column " style="padding: 0 200px; margin: 200px 0">
     <table class="table table-striped" style="width: 40%">
       <thead>
+        <th>#</th>
+        <th>Nome</th>
+        <th>Voto</th>
       </thead>
       <tbody>
-      <tr *ngFor="let dati of entries">
-        <th>{{ dati.key }}</th>
-        <td>{{ dati.val}}</td>
+      <tr *ngFor="let dati of entries; let i= index">
+        <th>{{ i+1 }}</th>
+        <td>{{dati.val.name}}</td>
+        <td>
+            <p>{{ dati.val.vote }}</p>
+            <rating></rating>
+        </td>
       </tr>
       </tbody>
     </table>

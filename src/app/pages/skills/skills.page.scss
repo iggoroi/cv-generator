@@ -1,1 +1,10 @@
+progress::-webkit-progress-bar { background: white; }
+progress::-webkit-progress-value { background: blueviolet; }
 
+progress {
+  height: 0.6rem;
+  border: solid;
+  border-radius: 200px;
+  color: blueviolet;
+  background: white;
+}

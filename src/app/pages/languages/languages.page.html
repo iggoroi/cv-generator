@@ -1,29 +1,23 @@
 <div class="row" style="margin: 10px 0 0 0">
   <header class="text-center">
-    <h3>Experiences</h3>
+    <h3>Languages</h3>
   </header>
   <hr>
   <div class="align-items-center justify-content-center d-flex flex-column" style="padding: 0 200px; margin: 200px 0">
-    <div style="width: 100%">
+    <div style="width: 50%">
       <table class="table table-striped">
         <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">Start date</th>
-          <th scope="col">End date</th>
-          <th scope="col">Name</th>
-          <th scope="col">Agency</th>
-          <th scope="col">Address</th>
+          <th scope="col">Language</th>
+          <th scope="col">Level</th>
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let dati of entries;">
-          <th scope="row">{{dati.key + 1}}</th>
-          <td>{{ dati.val.startDate }}</td>
-          <td>{{ dati.val.endDate }}</td>
-          <td>{{ dati.val.name }}</td>
-          <td>{{ dati.val.agency }}</td>
-          <td>{{ dati.val.address }}</td>
+        <tr *ngFor="let dati of entries; let i= index">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>{{ dati.val.language}}</td>
+          <td>{{ dati.val.level}}</td>
         </tr>
         </tbody>
       </table>
