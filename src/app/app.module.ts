@@ -4,23 +4,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigatorComponent } from './components/navigator/navigator.component';
 import { Routes, RouterModule } from '@angular/router';
-import { InformationComponent } from './pages/information/information.component';
-import { EducationComponent } from './pages/education/education.component';
-import { LicenseComponent } from './pages/license/license.component';
-import { SkillPage } from './pages/skill/skill-page.component';
-import { ProjectComponent } from './pages/project/project.component';
-import { ExperienceComponent } from "./pages/experience/experience.component";
+import { InformationPage } from './pages/informations/information.page';
+import { EducationPage } from './pages/education/education.page';
+import { LicensePage } from './pages/licenses/license.page';
+import { SkillsPage } from './pages/skills/skills.page';
+import { ProjectPage } from './pages/projects/project.page';
+import { ExperiencePage } from "./pages/experiences/experience.page";
 import {HttpClientModule} from "@angular/common/http";
-import { MenuComponent } from './pages/menu/menu.component';
-import {SkillComponent} from "./components/skill/skill.component";
+import { MenuComponent } from './pages/menu/menu.page';
+import { SkillComponent } from "./components/skill/skill.component";
 
 const routes: Routes = [
-  { path:'information', component:InformationComponent},
-  { path:'experience', component:ExperienceComponent},
-  { path:'education', component:EducationComponent},
-  { path:'license', component:LicenseComponent},
-  { path:'skill', component:SkillPage},
-  { path:'project', component:ProjectComponent},
+  { path:'informations', component:InformationPage},
+  { path:'experiences', component:ExperiencePage},
+  { path:'education', component:EducationPage},
+  { path:'licenses', component:LicensePage},
+  { path:'skills', component:SkillsPage},
+  { path:'projects', component:ProjectPage},
   { path:'menu', component:MenuComponent}
 ];
 
@@ -28,13 +28,13 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     NavigatorComponent,
-    InformationComponent,
-    EducationComponent,
-    LicenseComponent,
-    SkillPage,
+    InformationPage,
+    EducationPage,
+    LicensePage,
+    SkillsPage,
     SkillComponent,
-    ProjectComponent,
-    ExperienceComponent,
+    ProjectPage,
+    ExperiencePage,
     MenuComponent
   ],
   imports: [
@@ -45,6 +45,7 @@ const routes: Routes = [
   ],
   exports: [RouterModule],
   providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

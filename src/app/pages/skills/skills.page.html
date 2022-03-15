@@ -17,7 +17,7 @@
         <th scope="row">{{i +1 }}</th>
         <td>{{ dati.val.name}}</td>
         <td>
-          <skill [skill]="dati.val" (hosceltote)="trigger($event)"></skill>
+          <progress max="5" value="{{dati.val.power}}"></progress>
         </td>
       </tr>
       </tbody>

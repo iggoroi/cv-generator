@@ -4,18 +4,18 @@ import {HttpClient} from "@angular/common/http";
 import {CurriculumService} from "../../services/curriculum.service";
 
 @Component({
-  selector: 'app-experience',
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss']
+  selector: 'app-experiences',
+  templateUrl: './experience.page.html',
+  styleUrls: ['./experience.page.scss']
 })
-export class ExperienceComponent implements OnInit {
+export class ExperiencePage implements OnInit {
   data:Experience;
   entries:Array<{key:number,val:Experience}>=[];
 
   constructor(private cvservice:CurriculumService) { }
 
   ngOnInit(): void {
-    this.cvservice.getExperiences().subscribe(data=>{
+    this.cvservice.getSection('experiences').subscribe(data=>{
       this.data=data;
       Object.entries(this.data).forEach(([key,val])=>{
       this.entries.push({key: parseInt(key),val})

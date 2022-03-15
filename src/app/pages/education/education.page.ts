@@ -5,15 +5,15 @@ import {CurriculumService} from "../../services/curriculum.service";
 
 @Component({
   selector: 'app-education',
-  templateUrl: './education.component.html',
-  styleUrls: ['./education.component.scss']
+  templateUrl: './education.page.html',
+  styleUrls: ['./education.page.scss']
 })
-export class EducationComponent implements OnInit {
+export class EducationPage implements OnInit {
   data:Education;
   entries:Array<{key:string,val:any}> = [];
   constructor(private cvservice:CurriculumService) {}
   ngOnInit(): void {
-    this.cvservice.getEducation().subscribe(data=>{
+    this.cvservice.getSection('education').subscribe(data=>{
       this.data=data;
       Object.entries(this.data).forEach(([key,val])=>{
         this.entries.push({key,val})

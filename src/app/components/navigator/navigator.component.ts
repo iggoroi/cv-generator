@@ -21,28 +21,28 @@ export class NavigatorComponent {
         label:"Menu"
       },
       {
-        url:"/information",
-        label:"Information"
+        url:"/informations",
+        label:"Informations"
       },
       {
-        url:"/experience",
-        label:"Experience"
+        url:"/experiences",
+        label:"Experiences"
       },
       {
         url:"/education",
         label:"Education"
       },
       {
-        url:"/license",
-        label:"License"
+        url:"/licenses",
+        label:"Licenses"
       },
       {
-        url:"/skill",
-        label:"Skill"
+        url:"/skills",
+        label:"Skills"
       },
       {
-        url: "/project",
-        label: "Project"
+        url: "/projects",
+        label: "Projects"
       }
     ]
   }
