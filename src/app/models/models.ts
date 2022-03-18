@@ -10,7 +10,7 @@ export interface Information {
 
 export interface Experience {
   startDate: Date;
-  endDate: Date;
+  endDate?: Date;
   position: string;
   agency: string;
   address: string;
@@ -19,7 +19,7 @@ export interface Experience {
 export interface Education {
   school: string;
   endDate: Date;
-  cartificate: string;
+  certificate: string;
 }
 
 export interface License {
@@ -29,6 +29,7 @@ export interface License {
 }
 
 export interface Skills {
+  field: string;
   name: string;
   power: 1 | 2 | 3 | 4 | 5;
 }

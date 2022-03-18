@@ -3,16 +3,25 @@
     <h3>Informations</h3>
   </header>
   <hr>
-  <div class="col-sm-6">
-    <div class="text-black row" *ngFor="let dati of entries">
-      <div class="col-sm-3" style="font-size: 14pt"><b>{{ dati.key }}</b></div>
-      <div class="col-sm-1"> : </div>
-      <div class="col-sm">{{ dati.val }}</div>
-      <br>
+  <div class="row">
+    <div class="col-sm-2 text-black">
+      <div class="" style="font-size: 14pt"><b>Name</b></div>
+      <div class="" style="font-size: 14pt"><b>Surname</b></div>
+      <div class="" style="font-size: 14pt"><b>Cellphone</b></div>
+      <div class="" style="font-size: 14pt"><b>Email</b></div>
+      <div class="" style="font-size: 14pt"><b>Birthdate</b></div>
+      <div class="" style="font-size: 14pt"><b>Birth place</b></div>
+      <div class="" style="font-size: 14pt"><b>Residence</b></div>
+      <div class="" style="font-size: 14pt"><b>Marital status</b></div>
+    </div>
+    <div class="col">
+      <div class="text-black" *ngFor="let dati of entries">
+        <div style="font-size: 14pt">{{ dati.val }}</div>
+      </div>
     </div>
   </div>
   <div style="margin: 20px 0px 0px 0px">
-    <h5>Report</h5>
+    <h5>Profile</h5>
     <p>I’m a computer engineer enthusiast about Front-End technologies for more than two decades. I started
       developing websites in 1999 and I have a strong knowledge of the main programming languages. I deal with
       web development in all its aspects: database design, creation of responsive interfaces, web app, single-page

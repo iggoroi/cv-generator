@@ -15,6 +15,10 @@ import { MenuComponent } from './pages/menu/menu.page';
 import { SkillComponent } from "./components/skill/skill.component";
 import { RatingComponent } from './components/rating/rating.component';
 import { LanguagesPage } from './pages/languages/languages.page';
+import {GroupByPipeComponent} from "./groupBy/groupByPipe.component";
+import { FormsModule } from "@angular/forms";
+import { CollapseComponent } from './components/collapse/collapse.component';
+
 
 const routes: Routes = [
   { path:'informations', component:InformationPage},
@@ -40,13 +44,16 @@ const routes: Routes = [
     ExperiencePage,
     MenuComponent,
     RatingComponent,
-    LanguagesPage
+    LanguagesPage,
+    GroupByPipeComponent,
+    CollapseComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   exports: [RouterModule],
   providers: [],

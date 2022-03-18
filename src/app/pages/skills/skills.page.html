@@ -3,27 +3,11 @@
     <h3>Skills</h3>
   </header>
   <hr>
-  <div class="align-items-center justify-content-center d-flex flex-column" style="padding: 0 200px; margin: 200px 0">
-    <div style="width: 50%">
-      <table class="table table-striped">
-        <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Skill</th>
-          <th scope="col">Level</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr *ngFor="let dati of entries; let i= index">
-          <th scope="row">{{ i + 1 }}</th>
-          <td>{{ dati.val.name}}</td>
-          <td>
-            <progress max="5" value="{{dati.val.power}}"></progress>
-          </td>
-        </tr>
-        </tbody>
-      </table>
+  <div class="col-sm text-black" style="padding: 0 200px">
+    <div class="row">
+        <collapse></collapse>
     </div>
+  </div>
     <div>
       <h5>Report</h5>
       <p>Good experience in: Responsive Web Design, Graceful Degradation, Cross-browser compatibility, semantic
@@ -34,5 +18,4 @@
         Preferred OS: Linux
       </p>
     </div>
-  </div>
 </div>
