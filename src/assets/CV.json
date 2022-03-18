@@ -1,71 +1,330 @@
 {
   "information": {
-    "name": "Luca",
-    "surname": "Picone",
-    "cellphone": "3663597812",
-    "email": "l.picone1@itmalafarina.edu.it",
-    "birthdate": "2005-05-07",
-    "birthPlace": "Soverato",
-    "residence": "Soverato"
+    "name": "Alessandro",
+    "surname": "Vitari",
+    "cellphone": "+35699108219",
+    "email": "alexnoise79@gmail.com",
+    "birthdate": "1979-11-28",
+    "birthPlace": "Cosenza",
+    "residence": "Panama Court Flat 9, Triq Fonsu Marija Galea - Birkirkara - Malta",
+    "maritalStatus": "married"
   },
   "experiences": [
     {
-      "startDate": "2021-06-10",
-      "endDate": "20021-09-10",
-      "name": "Cashier",
-      "agency": "LucioInformatica",
-      "address": "Via Picone 00"
+      "startDate": "2020-08-01",
+      "endDate": "current",
+      "position": "Head of Frontend",
+      "agency": "Betstartes",
+      "address": "111, Triq Manoel De Vilhena - Gzira, Malta"
     },
     {
-      "startDate": "2005-05-07",
-      "name": "Cretino",
-      "agency": "Vita",
-      "address": "Mondo"
+      "startDate": "2017-10-01",
+      "endDate": "2020-07-01",
+      "position": "Head of Frontend",
+      "agency": "Sport Advice 24",
+      "address": "21, Charles court, St Luke’s Road - Pietá, Malta"
+    },
+    {
+      "startDate": "2016-07-01",
+      "endDate": "2017-09-01",
+      "position": "Senior Full Stack Developer",
+      "agency": "E-Tainment s.a.r.l.",
+      "address": "3B, Triq Wied l-Ghomor - San Giljan, Malta"
+    },
+    {
+      "startDate": "2012-05-01",
+      "endDate": "2016-07-01",
+      "position": "Senior Front-End Developer",
+      "agency": "ScaiLab s.r.l.",
+      "address": "Via Venezia, 24 - Rende CS, Italy"
+    },
+    {
+      "startDate": "2010-04-01",
+      "endDate": "2011-07-01",
+      "position": "PhD",
+      "agency": "SensysCal s.r.l.",
+      "address": "cube 41C, Via P. Bucci c/o DEIS (UNICAL) - Arcavacata CS, Italy"
+    },
+    {
+      "startDate": "2006-02-01",
+      "endDate": "2010-01-01",
+      "position": "Graphic Designer and Developer",
+      "agency": "N.D.B. Agency s.n.c.",
+      "address": "Scala S Centro Comm.le Metropolis, P.zza M.L. King - Rende CS, Italy"
+    },
+    {
+      "startDate": "2008-02-01",
+      "endDate": "2009-03-01",
+      "position": "Graphic Designer and Developer",
+      "agency": "Together Team s.r.l.",
+      "address": "[Via Torino, 34 - Rende CS, Italy]"
     }
   ],
-  "education": {
-    "school": "ITT Malafarina",
-    "startDate": "2016-09-14",
+  "education": [
+    {
+    "school": "Università della Calabria - Arcavacata",
     "endDate": "2022-06-09",
-    "address": "Trento Triestre Sreet"
-  },
+    "certificate": "Bachelor's degree in Information Technology"
+    },
+    {
+      "school": "I.T.I.S. A. Nitti – Cosenza",
+      "endDate": "2022-06-09",
+      "certificate": "Diploma in business studies and foreign language correspondent"
+    }
+  ],
   "license": [
     {
       "name": "Diploma",
       "vote": 80
+    },
+    {
+      "name": "Degree",
+      "vote": 110
+    },
+    {
+      "name": "Preliminary English Test",
+      "vote": 180
     }
   ],
   "skills": [
     {
-      "name": "Maths",
+      "field": "WEB",
+      "name": "JavaScript",
       "power": 5
     },
     {
-      "name": "Maltese",
-      "power": 2
+      "field": "WEB",
+      "name": "Angular",
+      "power": 5
     },
     {
-      "name": "LOL",
+      "field": "WEB",
+      "name": "Typescript",
+      "power": 4
+    },
+    {
+      "field": "WEB",
+      "name": "jQuery",
+      "power": 4
+    },
+    {
+      "field": "WEB",
+      "name": "AJAX",
+      "power": 5
+    },
+    {
+      "field": "WEB",
+      "name": "HTML",
+      "power": 4
+    },
+    {
+      "field": "WEB",
+      "name": "CSS",
+      "power": 4
+    },
+    {
+      "field": "WEB",
+      "name": "Bootstrap",
+      "power": 5
+    },
+    {
+      "field": "WEB",
+      "name": "Node.js",
+      "power": 4
+    },
+    {
+      "field": "WEB",
+      "name": "Apache Cordova",
+      "power": 5
+    },
+    {
+      "field": "PREPROCESSORS/AUTOMATE",
+      "name": "SASS/LESS",
+      "power": 4
+    },
+    {
+      "field": "PREPROCESSORS/AUTOMATE",
+      "name": "Compass",
+      "power": 5
+    },
+    {
+      "field": "PREPROCESSORS/AUTOMATE",
+      "name": "Grunt",
+      "power": 4
+    },
+    {
+      "field": "DATA",
+      "name": "REST",
+      "power": 4
+    },
+    {
+      "field": "DATA",
+      "name": "XML",
+      "power": 5
+    },
+    {
+      "field": "DATA",
+      "name": "XSLT/XPATH",
+      "power": 5
+    },
+    {
+      "field": "DATA",
+      "name": "JSON",
+      "power": 4
+    },
+    {
+      "field": "OOP",
+      "name": "Java",
+      "power": 4
+    },
+    {
+      "field": "OOP",
+      "name": "C++",
+      "power": 5
+    },
+    {
+      "field": "OOP",
+      "name": "PHP",
+      "power": 4
+    },
+    {
+      "field": "OOP",
+      "name": "Net MVC",
+      "power": 5
+    },
+    {
+      "field": "DBMS",
+      "name": "MySQL",
+      "power": 4
+    },
+    {
+      "field": "DBMS",
+      "name": "SQLite",
+      "power": 4
+    },
+    {
+      "field": "CVS",
+      "name": "Mercurial",
+      "power": 5
+    },
+    {
+      "field": "CVS",
+      "name": "Git",
+      "power": 5
+    },
+    {
+      "field": "CMS/Frameworks",
+      "name": "Symfony",
+      "power": 4
+    },
+    {
+      "field": "CMS/Frameworks",
+      "name": "Laravel",
+      "power": 4
+    },
+    {
+      "field": "CMS/Frameworks",
+      "name": "Joomla",
+      "power": 5
+    },
+    {
+      "field": "CMS/Frameworks",
+      "name": "WordPress",
+      "power": 4
+    },
+    {
+      "field": "SERVER",
+      "name": "LAMP",
+      "power": 5
+    },
+    {
+      "field": "SERVER",
+      "name": "LEMP",
+      "power": 4
+    },
+    {
+      "field": "SERVER",
+      "name": "AWS",
+      "power": 5
+    },
+    {
+      "field": "Integrations",
+      "name": "Jenkins",
+      "power": 4
+    },
+    {
+      "field": "Integrations",
+      "name": "Gitlab",
+      "power": 4
+    },
+    {
+      "field": "Integrations",
+      "name": "Google Maps API",
+      "power": 5
+    },
+    {
+      "field": "Integrations",
+      "name": "FaceBook-JsSDK API",
+      "power": 4
+    },
+    {
+      "field": "Integrations",
+      "name": "Adobe Creative Suite",
+      "power": 4
+    },
+    {
+      "field": "Hardware",
+      "name": "Assemblage of personal computers",
+      "power": 4
+    },
+    {
+      "field": "Hardware",
+      "name": "Data recovery",
       "power": 4
     }
   ],
   "projects": [
     {
-      "name": "Erasmus+",
-      "agency": "Betstars",
-      "startDate": "2022-03-01",
-      "endDate": "2022-03-29"
+      "name": "Hibet.it",
+      "agency": "Sport Advice Limited",
+      "startDate": "2017-09-01",
+      "endDate": "2020-06-01"
     },
     {
-      "name": "Fare schifo",
-      "agency": "Dio srl",
-      "startDate": "2005-05-07"
+      "name": "Armani Exchange",
+      "agency": "SCAI",
+      "startDate": "2016-07-01",
+      "endDate": "2020-06-01"
+    },
+    {
+      "name": "Dunhill ",
+      "agency": "SCAI",
+      "startDate": "2015-09-01",
+      "endDate": "2016-02-01"
+    },
+    {
+      "name": "ngLoadableContentngLoadableContent",
+      "agency": "Angular Loadable",
+      "startDate": "2015-09-01",
+      "endDate": "2022-02-01"
+    },
+    {
+      "name": "ngFloatingLabel ",
+      "agency": "Angular",
+      "startDate": "2015-03-01",
+      "endDate": "2022-02-01"
+    },
+    {
+      "name": "Kartell",
+      "agency": "Kartell",
+      "startDate": "2015-09-01",
+      "endDate": "2022-02-01"
     }
   ],
   "languages": [
     {
-      "language": "Italiano",
-      "level": "Madrelingua"
+      "language": "Italian",
+      "level": "Mother tongue"
     },
     {
       "language": "Inglese",
@@ -76,8 +335,8 @@
       "level": "B1"
     },
     {
-      "language": "Arabo",
-      "level": "A2"
+      "language": "Russian",
+      "level": "B1"
     }
   ]
 }

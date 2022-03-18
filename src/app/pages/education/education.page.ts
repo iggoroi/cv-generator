@@ -11,7 +11,9 @@ import {CurriculumService} from "../../services/curriculum.service";
 export class EducationPage implements OnInit {
   data:Education;
   entries:Array<{key:string,val:any}> = [];
+
   constructor(private cvservice:CurriculumService) {}
+
   ngOnInit(): void {
     this.cvservice.getSection('education').subscribe(data=>{
       this.data=data;
@@ -20,5 +22,4 @@ export class EducationPage implements OnInit {
       })
     })
   }
-
 }

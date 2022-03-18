@@ -10,8 +10,8 @@ import {CurriculumService} from "../../services/curriculum.service";
 
 export class SkillsPage implements OnInit {
 
-  data:Skills;
-  entries:Array<{key:number,val:Skills}> = [];
+  data:Skills[];
+  //entries:Array<{key:number,val:Skills}> = [];
 
 
   constructor(private cvservice:CurriculumService) { }
@@ -19,9 +19,9 @@ export class SkillsPage implements OnInit {
   ngOnInit(): void {
     this.cvservice.getSection('skills').subscribe(data=>{
       this.data=data;
-      Object.entries(this.data).forEach(([key,val])=>{
+      /*Object.entries(this.data).forEach(([key,val])=>{
         this.entries.push({key: parseInt(key),val})
-      })
+      })*/
     })
 
   }
