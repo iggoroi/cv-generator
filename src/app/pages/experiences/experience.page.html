@@ -5,13 +5,18 @@
   <hr>
   <div class="align-items-center justify-content-center d-flex flex-column" style=" margin: 100px 0">
     <div style="width: 100%">
-      <div class="d-flex flex-column flex-md-row justify-content-between mb-5" *ngFor="let dati of entries; let i=index">
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-5" *ngFor="let dati of entries">
         <div class="flex-grow-1">
           <h3 class="mb-0">{{dati.val.position}}</h3>
           <div class="subheading mb-3"><b>{{dati.val.agency}}</b> - <span class="text-lowercase">{{dati.val.address}}</span></div>
           <p style="white-space: pre-wrap; width: 75%">{{dati.val.report}}</p>
         </div>
-        <div class="flex-shrink-0"><span class="text-primary" >{{dati.val.startDate | date:'longDate'}}  -  <span *ngIf="dati.val.endDate=='current'">current</span>{{dati.val.endDate | date:'longDate'}}</span></div>
+        <div class="flex-shrink-0">
+          <span class="text-primary" >{{dati.val.startDate | date:'longDate'}}  -
+            <span *ngIf="dati.val.endDate!=='current'">{{dati.val.endDate | date:'longDate'}}</span>
+            <span *ngIf="dati.val.endDate==='current'">current</span>
+          </span>
+        </div>
       </div>
     </div>
   </div>

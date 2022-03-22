@@ -3,8 +3,8 @@
   <button type="button" (click)="collapse[i]=!collapse[i]" class="btn btn-outline-primary text-black text-uppercase">
     <b>{{dati.key}}</b>
   </button>
-  <div>
-    <div *ngFor="let skill of dati.value" class="col-sm collapse" [class.collapse]="collapse[i]">
+  <div class="row">
+    <div *ngFor="let skill of dati.value" class="col collapse" [class.collapse]="collapse[i]">
       <skill [skill]="skill"></skill>
     </div>
   </div>
