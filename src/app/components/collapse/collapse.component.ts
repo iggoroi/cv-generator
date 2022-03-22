@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Skills} from "../../models/models";
+import {Languages, Skills} from "../../models/models";
 import {CurriculumService} from "../../services/curriculum.service";
 
 @Component({
@@ -8,8 +8,10 @@ import {CurriculumService} from "../../services/curriculum.service";
   styleUrls: ['./collapse.component.scss']
 })
 export class CollapseComponent implements OnInit {
-  collapse: boolean[]=[true,true,true,true,true,true,true,true,true,true];
+  collapse: boolean[]=[];
   data: Skills[];
+  entries:Array<{key:string,val:Skills}> = [];
+
 
   constructor(private cvservice: CurriculumService) {
   }
@@ -17,6 +19,10 @@ export class CollapseComponent implements OnInit {
   ngOnInit(): void {
     this.cvservice.getSection('skills').subscribe(data => {
       this.data = data;
+      Object.entries(this.data).forEach(([key,val])=>{
+        this.collapse.push(true);
+      })
     })
   }
+
 }

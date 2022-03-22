@@ -1,6 +1,6 @@
 <div class="row-cols-1" *ngFor="let dati of (data | groupBy:'field'); let i= index">
   <br>
-  <button type="button" (click)="collapse[i]=!collapse[i]" class="btn btn-outline-primary text-black">
+  <button type="button" (click)="collapse[i]=!collapse[i]" class="btn btn-outline-primary text-black text-uppercase">
     <b>{{dati.key}}</b>
   </button>
   <div>
