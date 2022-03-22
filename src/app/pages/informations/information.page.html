@@ -3,29 +3,95 @@
     <h3>Informations</h3>
   </header>
   <hr>
-  <div class="row">
-    <div class="col-sm-2 text-black">
-      <div class="" style="font-size: 14pt"><b>Name</b></div>
-      <div class="" style="font-size: 14pt"><b>Surname</b></div>
-      <div class="" style="font-size: 14pt"><b>Cellphone</b></div>
-      <div class="" style="font-size: 14pt"><b>Email</b></div>
-      <div class="" style="font-size: 14pt"><b>Birthdate</b></div>
-      <div class="" style="font-size: 14pt"><b>Birth place</b></div>
-      <div class="" style="font-size: 14pt"><b>Residence</b></div>
-      <div class="" style="font-size: 14pt"><b>Marital status</b></div>
+  <div class="col-5">
+    <div class="row" style="margin: 20px 0px 0px 0px">
+      <h5>About me</h5>
+      <p>I’m a computer engineer enthusiast about Front-End technologies for more than two decades. I started
+        developing websites in 1999 and I have a strong knowledge of the main programming languages. I deal with
+        web development in all its aspects: database design, creation of responsive interfaces, web app, single-page
+        applications, REST api, administration panels, performance optimization. I like to keep abreast of the latest
+        technologies that relate to the web. I am very proactive with a great aptitude for problem solving.</p>
     </div>
-    <div class="col">
-      <div class="text-black" *ngFor="let dati of entries">
-        <div style="font-size: 14pt">{{ dati.val }}</div>
+    <div class="row align-items-center justify-content-center d-flex flex-column" style="background: dodgerblue; margin: 20px 10px 0px 0px; padding: 10px">
+      <div class="text-black align-items-center justify-content-center d-flex flex-column">
+        <h6>My Services</h6>
+      </div>
+      <div class="align-items-center justify-content-center d-flex flex-column service-item">
+          <span class="bi bi-file-earmark-code-fill"></span>
+        <div>
+          <span class="text-black">
+            <b>Frontend Development</b>
+          </span>
+        </div>
+        <div>
+          <div class="align-items-center justify-content-center d-flex flex-column">
+            <p>Modern and mobile-ready website.</p>
+          </div>
+        </div>
+      </div>
+      <div class="align-items-center justify-content-center d-flex flex-column service-item">
+          <span class="bi bi-controller"></span>
+        <div>
+          <span class="text-black">
+            <b>Gaming Development</b>
+          </span>
+        </div>
+        <div>
+          <div class="align-items-center justify-content-center d-flex flex-column text-black">
+            <div>Modern and mobile-ready website of gaming.</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div style="margin: 20px 0px 0px 0px">
-    <h5>Profile</h5>
-    <p>I’m a computer engineer enthusiast about Front-End technologies for more than two decades. I started
-      developing websites in 1999 and I have a strong knowledge of the main programming languages. I deal with
-      web development in all its aspects: database design, creation of responsive interfaces, web app, single-page
-      applications, REST api, administration panels, performance optimization. I like to keep abreast of the latest
-      technologies that relate to the web. I am very proactive with a great aptitude for problem solving.</p>
+  <div class="col" style="margin: 20px 0px 0px 0px">
+    <div class="row text-black" style="background: dodgerblue; margin: 20px 10px 0px 0px; padding: 10px">
+      <div class="col-3">
+        <div class="" style="font-size: 14pt"><b>Name</b></div>
+        <div class="" style="font-size: 14pt"><b>Surname</b></div>
+        <div class="" style="font-size: 14pt"><b>Cellphone</b></div>
+        <div class="" style="font-size: 14pt"><b>Email</b></div>
+        <div class="" style="font-size: 14pt"><b>Birthdate</b></div>
+        <div class="" style="font-size: 14pt"><b>Birth place</b></div>
+        <div class="" style="font-size: 14pt"><b>Residence</b></div>
+        <div class="" style="font-size: 14pt"><b>Marital status</b></div>
+      </div>
+      <div class="col text-black" style="background: dodgerblue">
+        <div class="text-black" *ngFor="let dati of entries">
+          <div style="font-size: 14pt">{{ dati.val }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin: 20px 10px 0px 0px; padding: 10px">
+      <div class="text-black align-items-center justify-content-center d-flex flex-column">
+        <h6>My Hobbies</h6>
+      </div>
+      <div class="align-items-center justify-content-center d-flex flex-column service-item">
+          <span class="bi bi-music-note-beamed"></span>
+        <div>
+          <span class="text-black">
+            <b>Music</b>
+          </span>
+        </div>
+        <div>
+          <div class="align-items-center justify-content-center d-flex flex-column">
+            <p>I like listen trap music when I work and in other situation I listen different kinds music.</p>
+          </div>
+        </div>
+      </div>
+      <div class="align-items-center justify-content-center d-flex flex-column service-item">
+          <span class="bi bi-film"></span>
+        <div>
+          <span class="text-black">
+            <b>Netflix</b>
+          </span>
+        </div>
+        <div>
+          <div class="align-items-center justify-content-center d-flex flex-column">
+            <p>I love watch series TV and film on Netflix with a bottle of "Amaro del Capo".</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
