@@ -13,6 +13,7 @@ export class InformationPage implements OnInit {
   data:Information;
   entries:Array<{key:string,val:any}>=[];
 
+
   constructor(private cvservice:CurriculumService) { }
 
   ngOnInit(): void {
@@ -22,7 +23,6 @@ export class InformationPage implements OnInit {
         this.entries.push({key,val})
       })
     })
-
   }
 
 }

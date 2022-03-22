@@ -3,24 +3,15 @@
     <h3>Education</h3>
   </header>
   <hr>
-  <div class="col-sm align-items-center justify-content-center d-flex flex-column text-black" style="margin: 200px 0">
-    <div style="width: 50%">
-        <div class="row">
-          <div class="col-sm-4"><b>School</b></div>
-          <div class="col-sm-2"><b>EndDate</b></div>
-          <div class="col-sm"><b>Certificate</b></div>
+  <div class="text-black">
+    <div style="margin: 100px 0">
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-5" *ngFor="let dati of entries">
+        <div class="flex-grow-1">
+          <h3 class="mb-0">{{dati.val.school}}</h3>
+          <div class="subheading mb-3 text-lowercase">{{dati.val.certificate}}</div>
         </div>
-        <div class="row" *ngFor="let dati of entries">
-          <div class="col-sm-4">{{ dati.val.school}}</div>
-          <div class="col-sm-2">{{ dati.val.endDate}}</div>
-          <div class="col-sm">{{ dati.val.certificate}}</div>
-        </div>
-    </div>
-    <div>
-      <h5>Report</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate?
-        Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione
-        repudiandae sunt vel?</p>
+        <div class="flex-shrink-0"><span class="text-primary">Date of release:  {{dati.val.endDate}}</span></div>
+      </div>
     </div>
   </div>
 </div>

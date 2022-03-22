@@ -15,49 +15,56 @@
       "endDate": "current",
       "position": "Head of Frontend",
       "agency": "Betstartes",
-      "address": "111, Triq Manoel De Vilhena - Gzira, Malta"
+      "address": "111, Triq Manoel De Vilhena - Gzira, Malta",
+      "report": "Let’s start… Together! Betstarters is a Boutique all-in one full turnkey solution platform committed to deliver powerful, relevant and specific solutions... on time. Software Product BetStarters is an ambitious provider of premium. \nTask:\no Leading a group of Frontend developers, review code and check best practices.\no Refactoring and extend an existing platform with new integrations and functionalities\no Work together with others departments to release high code standards\no Responsible for task prioritization, estimation and delivery.\no Identify technology trends and implement solutions to support the business"
     },
     {
       "startDate": "2017-10-01",
       "endDate": "2020-07-01",
       "position": "Head of Frontend",
       "agency": "Sport Advice 24",
-      "address": "21, Charles court, St Luke’s Road - Pietá, Malta"
+      "address": "21, Charles court, St Luke’s Road - Pietá, Malta",
+      "report": "Su hibet.it puoi divertirti online con le scommesse sportive prepartita e live, alle migliori quote. Tanti giochi di casinò e casinò live, poker e molto altro. Segui gli eventi in live streaming da pc e smartphones. \n Task: \no Leading a group of Frontend developers and work with them on daily bases\no Work together with others departments to release high code standards\no Create mock REST API when data is still in development to unlock design\no Responsible for release and deployment."
     },
     {
       "startDate": "2016-07-01",
       "endDate": "2017-09-01",
       "position": "Senior Full Stack Developer",
       "agency": "E-Tainment s.a.r.l.",
-      "address": "3B, Triq Wied l-Ghomor - San Giljan, Malta"
+      "address": "3B, Triq Wied l-Ghomor - San Giljan, Malta",
+      "report": "Sviluppo e creazione di Online Store per la piattaforma YOOX Group. \n Task: \no Frontend Development\no Managing Backend API, Controllers and Databases\no Working with sockets for realtime chat"
     },
     {
       "startDate": "2012-05-01",
       "endDate": "2016-07-01",
       "position": "Senior Front-End Developer",
       "agency": "ScaiLab s.r.l.",
-      "address": "Via Venezia, 24 - Rende CS, Italy"
+      "address": "Via Venezia, 24 - Rende CS, Italy",
+      "report": "Task: \nDevelopment of Online Stores for YOOX Group platform\n▪ create custom HTML/CSS based on Art directors templates following MVC paradigms\n▪ using JavaScript/jQuery to manage interactions with AJAX and animations effects\n▪ optimize web pages for smartphone and tablet using mediaqueries\n▪ cooperate with team to improve productivity using agile methodologies\no Selecting and evaluating candidates.\no Professional training of new staff."
     },
     {
       "startDate": "2010-04-01",
       "endDate": "2011-07-01",
       "position": "PhD",
       "agency": "SensysCal s.r.l.",
-      "address": "cube 41C, Via P. Bucci c/o DEIS (UNICAL) - Arcavacata CS, Italy"
+      "address": "cube 41C, Via P. Bucci c/o DEIS (UNICAL) - Arcavacata CS, Italy",
+      "report": "Task: \no Implementation of data-stream management systems collected from mobile devices\no Data mining\no Streaming onto database (DSMS)"
     },
     {
       "startDate": "2006-02-01",
       "endDate": "2010-01-01",
       "position": "Graphic Designer and Developer",
       "agency": "N.D.B. Agency s.n.c.",
-      "address": "Scala S Centro Comm.le Metropolis, P.zza M.L. King - Rende CS, Italy"
+      "address": "Scala S Centro Comm.le Metropolis, P.zza M.L. King - Rende CS, Italy",
+      "report": "Task: \no Creation of advertising video\no Commercial prints\no Web development (Flash/Html)\no Network Administrator\no Management of a 12 sqm size Led wall located in the city centre."
     },
     {
       "startDate": "2008-02-01",
       "endDate": "2009-03-01",
       "position": "Graphic Designer and Developer",
       "agency": "Together Team s.r.l.",
-      "address": "[Via Torino, 34 - Rende CS, Italy]"
+      "address": "Via Torino, 34 - Rende CS, Italy",
+      "report": "Task: \no Creation of advertising video\no Commercial prints\no Web development (Flash/Html)\no Network Administrator\no Management of a 12 sqm size Led wall located in the city centre."
     }
   ],
   "education": [

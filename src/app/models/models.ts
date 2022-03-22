@@ -10,10 +10,11 @@ export interface Information {
 
 export interface Experience {
   startDate: Date;
-  endDate?: Date;
+  endDate?: Date | string;
   position: string;
   agency: string;
   address: string;
+  report: string;
 }
 
 export interface Education {
