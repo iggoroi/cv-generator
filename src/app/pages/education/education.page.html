@@ -3,26 +3,18 @@
     <h3>Education</h3>
   </header>
   <hr>
-  <div class="align-items-center justify-content-center d-flex flex-column" style="padding: 0 200px; margin: 200px 0">
+  <div class="col-sm align-items-center justify-content-center d-flex flex-column text-black" style="margin: 200px 0">
     <div style="width: 50%">
-      <table class="table table-striped table-bordered border-dark">
-        <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">School</th>
-          <th scope="col">EndDate</th>
-          <th scope="col">Certificate</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr *ngFor="let dati of entries;  let i = index">
-          <td>{{ i + 1}}</td>
-          <td>{{ dati.val.school}}</td>
-          <td>{{ dati.val.endDate}}</td>
-          <td>{{ dati.val.certificate}}</td>
-        </tr>
-        </tbody>
-      </table>
+        <div class="row">
+          <div class="col-sm-4"><b>School</b></div>
+          <div class="col-sm-2"><b>EndDate</b></div>
+          <div class="col-sm"><b>Certificate</b></div>
+        </div>
+        <div class="row" *ngFor="let dati of entries">
+          <div class="col-sm-4">{{ dati.val.school}}</div>
+          <div class="col-sm-2">{{ dati.val.endDate}}</div>
+          <div class="col-sm">{{ dati.val.certificate}}</div>
+        </div>
     </div>
     <div>
       <h5>Report</h5>
