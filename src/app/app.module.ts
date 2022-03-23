@@ -6,7 +6,6 @@ import { NavigatorComponent } from './components/navigator/navigator.component';
 import { Routes, RouterModule } from '@angular/router';
 import { InformationPage } from './pages/informations/information.page';
 import { EducationPage } from './pages/education/education.page';
-import { LicensePage } from './pages/licenses/license.page';
 import { SkillsPage } from './pages/skills/skills.page';
 import { ProjectPage } from './pages/projects/project.page';
 import { ExperiencePage } from "./pages/experiences/experience.page";
@@ -24,7 +23,6 @@ const routes: Routes = [
   { path:'informations', component:InformationPage},
   { path:'experiences', component:ExperiencePage},
   { path:'education', component:EducationPage},
-  { path:'licenses', component:LicensePage},
   { path:'skills', component:SkillsPage},
   { path:'projects', component:ProjectPage},
   { path:'menu', component:MenuComponent},
@@ -37,7 +35,6 @@ const routes: Routes = [
     NavigatorComponent,
     InformationPage,
     EducationPage,
-    LicensePage,
     SkillsPage,
     SkillComponent,
     ProjectPage,

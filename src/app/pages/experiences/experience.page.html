@@ -12,10 +12,10 @@
           <p style="white-space: pre-wrap; width: 75%">{{dati.val.report}}</p>
         </div>
         <div class="flex-shrink-0">
-          <span class="text-primary" >{{dati.val.startDate | date:'longDate'}}  -
+          <div class="text-primary" >{{dati.val.startDate | date:'longDate'}}  -
             <span *ngIf="dati.val.endDate!=='current'">{{dati.val.endDate | date:'longDate'}}</span>
             <span *ngIf="dati.val.endDate==='current'">current</span>
-          </span>
+          </div>
         </div>
       </div>
     </div>

@@ -70,26 +70,20 @@
   "education": [
     {
     "school": "Università della Calabria - Arcavacata",
-    "endDate": "2022-06-09",
-    "certificate": "Bachelor's degree in Information Technology"
+    "endDate": "2000-06-09",
+    "certificate": "Bachelor's degree in Information Technology",
+    "vote": 100
     },
     {
       "school": "I.T.I.S. A. Nitti – Cosenza",
-      "endDate": "2022-06-09",
-      "certificate": "Diploma in business studies and foreign language correspondent"
-    }
-  ],
-  "license": [
-    {
-      "name": "Diploma",
+      "endDate": "1990-06-09",
+      "certificate": "Diploma in business studies and foreign language correspondent",
       "vote": 80
     },
     {
-      "name": "Degree",
-      "vote": 110
-    },
-    {
-      "name": "Preliminary English Test",
+      "school": "Cambridge School ",
+      "endDate": "2012-06-09",
+      "certificate": "Certificate Cambridge",
       "vote": 180
     }
   ],

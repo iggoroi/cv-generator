@@ -4,13 +4,23 @@
   </header>
   <hr>
   <div class="text-black">
-    <div style="margin: 100px 0">
-      <div class="d-flex flex-column flex-md-row justify-content-between mb-5" *ngFor="let dati of entries">
+    <div class="row" style="margin: 100px 0">
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-5" *ngFor="let dati of entries" style="width: 100%">
+        <div>
+          <h3><i class="bi bi-award"></i></h3>
+        </div>
         <div class="flex-grow-1">
           <h3 class="mb-0">{{dati.val.school}}</h3>
           <div class="text-lowercase">{{dati.val.certificate}}</div>
         </div>
-        <div class="flex-shrink-0"><span class="text-primary">Date of release:  {{dati.val.endDate}}</span></div>
+        <div class="flex-shrink-0">
+          <div class="row">
+            <span class="text-primary">Date of release:  {{dati.val.endDate}}</span>
+          </div>
+          <div class="row">
+            <span class="text-primary"><b>Vote : </b>{{dati.val.vote}}</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>

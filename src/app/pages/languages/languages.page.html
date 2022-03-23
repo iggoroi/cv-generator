@@ -3,22 +3,25 @@
     <h3>Languages</h3>
   </header>
   <hr>
-  <div class="align-items-center justify-content-center d-flex flex-column text-black" style="padding: 0 200px; margin: 200px 0">
-    <div class="col-sm-5" style="width: 50%">
+  <div class=" text-black" style="margin: 100px 0">
+    <div class="col" style="width: 100%">
+      <div class="justify-content-between mb-5" *ngFor="let dati of entries">
         <div class="row">
-          <div class="col-sm"><b>Language</b></div>
-          <div class="col-sm"><b>Level</b></div>
+          <div class="col-1">
+            <h3 class="mb-0"><i class="bi bi-translate"></i></h3>
+          </div>
+          <div class="col">
+            <h3 class="mb-0">{{dati.val.language}}</h3>
+            <div class="subheading mb-3"><b>{{dati.val.level}}</b></div>
+          </div>
+          <div>
+            <h5>Report</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate?
+              Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione
+              repudiandae sunt vel?</p>
+          </div>
         </div>
-        <div class="row" *ngFor="let dati of entries">
-          <div class="col-sm">{{ dati.val.language}}</div>
-          <div class="col-sm">{{ dati.val.level}}</div>
-        </div>
-    </div>
-    <div>
-      <h5>Report</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque iusto magnam quis voluptate?
-        Accusamus accusantium cum, dolores, ducimus expedita explicabo hic iure nihil pariatur perspiciatis ratione
-        repudiandae sunt vel?</p>
+      </div>
     </div>
   </div>
 </div>

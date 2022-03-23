@@ -21,11 +21,6 @@ export interface Education {
   school: string;
   endDate: Date;
   certificate: string;
-}
-
-export interface License {
-  field: string;
-  name: string;
   number: number;
 }
 

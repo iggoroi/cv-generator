@@ -33,10 +33,6 @@ export class NavigatorComponent {
         label:"Education"
       },
       {
-        url:"/licenses",
-        label:"Licenses"
-      },
-      {
         url:"/skills",
         label:"Skills"
       },
