@@ -12,7 +12,6 @@ import { ExperiencePage } from "./pages/experiences/experience.page";
 import {HttpClientModule} from "@angular/common/http";
 import { MenuComponent } from './pages/menu/menu.page';
 import { SkillComponent } from "./components/skill/skill.component";
-import { RatingComponent } from './components/rating/rating.component';
 import { LanguagesPage } from './pages/languages/languages.page';
 import {GroupByPipeComponent} from "./groupBy/groupByPipe.component";
 import { FormsModule } from "@angular/forms";
@@ -40,7 +39,6 @@ const routes: Routes = [
     ProjectPage,
     ExperiencePage,
     MenuComponent,
-    RatingComponent,
     LanguagesPage,
     GroupByPipeComponent,
     CollapseComponent

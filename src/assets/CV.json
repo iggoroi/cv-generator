@@ -24,7 +24,7 @@
       "position": "Head of Frontend",
       "agency": "Sport Advice 24",
       "address": "21, Charles court, St Luke’s Road - Pietá, Malta",
-      "report": "Su hibet.it puoi divertirti online con le scommesse sportive prepartita e live, alle migliori quote. Tanti giochi di casinò e casinò live, poker e molto altro. Segui gli eventi in live streaming da pc e smartphones. \n Task: \no Leading a group of Frontend developers and work with them on daily bases\no Work together with others departments to release high code standards\no Create mock REST API when data is still in development to unlock design\no Responsible for release and deployment."
+      "report": "On hibet.it you can have fun online with pre-match and live sports betting, at the best odds. Lots of casino and live casino games, poker and much more. Follow the events in live streaming from pc and smartphones. \n Task: \no Leading a group of Frontend developers and work with them on daily bases\no Work together with others departments to release high code standards\no Create mock REST API when data is still in development to unlock design\no Responsible for release and deployment."
     },
     {
       "startDate": "2016-07-01",
@@ -32,7 +32,7 @@
       "position": "Senior Full Stack Developer",
       "agency": "E-Tainment s.a.r.l.",
       "address": "3B, Triq Wied l-Ghomor - San Giljan, Malta",
-      "report": "Sviluppo e creazione di Online Store per la piattaforma YOOX Group. \n Task: \no Frontend Development\no Managing Backend API, Controllers and Databases\no Working with sockets for realtime chat"
+      "report": "Development and creation of Online Store for the YOOX Group platform. \n Task: \no Frontend Development\no Managing Backend API, Controllers and Databases\no Working with sockets for realtime chat"
     },
     {
       "startDate": "2012-05-01",
@@ -289,37 +289,43 @@
       "name": "Hibet.it",
       "agency": "Sport Advice Limited",
       "startDate": "2017-09-01",
-      "endDate": "2020-06-01"
+      "endDate": "2020-06-01",
+      "report": "My projects are better than Elon Mask's"
     },
     {
       "name": "Armani Exchange",
       "agency": "SCAI",
       "startDate": "2016-07-01",
-      "endDate": "2020-06-01"
+      "endDate": "2020-06-01",
+      "report": "My projects are better than Elon Mask's"
     },
     {
       "name": "Dunhill ",
       "agency": "SCAI",
       "startDate": "2015-09-01",
-      "endDate": "2016-02-01"
+      "endDate": "2016-02-01",
+      "report": "My projects are better than Elon Mask's"
     },
     {
       "name": "ngLoadableContentngLoadableContent",
       "agency": "Angular Loadable",
       "startDate": "2015-09-01",
-      "endDate": "2022-02-01"
+      "endDate": "2022-02-01",
+      "report": "My projects are better than Elon Mask's"
     },
     {
       "name": "ngFloatingLabel ",
       "agency": "Angular",
       "startDate": "2015-03-01",
-      "endDate": "2022-02-01"
+      "endDate": "2022-02-01",
+      "report": "My projects are better than Elon Mask's"
     },
     {
       "name": "Kartell",
       "agency": "Kartell",
       "startDate": "2015-09-01",
-      "endDate": "2022-02-01"
+      "endDate": "2022-02-01",
+      "report": "My projects are better than Elon Mask's"
     }
   ],
   "languages": [
@@ -328,11 +334,11 @@
       "level": "Mother tongue"
     },
     {
-      "language": "Inglese",
+      "language": "English",
       "level": "C1"
     },
     {
-      "language": "Francese",
+      "language": "French",
       "level": "B1"
     },
     {

@@ -3,30 +3,21 @@
     <h3>Projects</h3>
   </header>
   <hr>
-  <div class="align-items-center justify-content-center d-flex flex-column" style="padding: 0 200px; margin: 200px 0">
-    <table class="table table-striped">
-      <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Project name</th>
-        <th scope="col">Hosting agency</th>
-        <th scope="col">Start date</th>
-        <th scope="col">End date</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr *ngFor="let dati of entries">
-        <th scope="row">{{dati.key + 1}}</th>
-        <th>{{ dati.val.name}}</th>
-        <td>{{ dati.val.agency }}</td>
-        <td>{{ dati.val.startDate }}</td>
-        <td>{{ dati.val.endDate }}</td>
-      </tr>
-      </tbody>
-    </table>
-    <div style="margin: auto">
-      <h5>Report</h5>
-      <p>I miei progetti sono migliori di quelli di Elon Musk, con questo ho chiuso.</p>
+  <div class="align-items-center justify-content-center d-flex flex-column" style="margin: 100px 0">
+    <div style="width: 100%">
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-5" *ngFor="let dati of entries">
+        <div class="flex-grow-1">
+          <h3 class="mb-0">{{dati.val.name}}</h3>
+          <div class="subheading mb-3"><b>{{dati.val.agency}}</b></div>
+          <p style="white-space: pre-wrap; width: 75%">{{dati.val.report}}</p>
+        </div>
+        <div class="flex-shrink-0">
+          <div class="text-primary" >{{dati.val.startDate | date:'longDate'}}  -
+            <span *ngIf="dati.val.endDate!=='current'">{{dati.val.endDate | date:'longDate'}}</span>
+            <span *ngIf="dati.val.endDate==='current'">current</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
